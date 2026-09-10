@@ -1,0 +1,90 @@
+
+footer {
+  margin: 10px;
+    margin-top: 50px;
+    border-radius: 25px;
+    position: relative;
+    background-color: #00000097;
+    backdrop-filter: blur(5px);
+  }
+  footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  .row {
+    padding: 10px;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  h3 {
+    font-family: 'HeroFont',sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    font-size: 1.6em;
+    white-space: nowrap;
+  }
+  ul {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: blueviolet;
+  }
+  .about p {
+    font-family: "Poppins", sans-serif;
+    color: #c4c3c3;
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+  #sub-btn{
+    display: flex;
+    flex-direction: column;
+  }
+  #sub-btn input{
+    font-size: 1em;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  #sub-btn button{
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 1rem !important;
+    color: #fff !important;
+    font-weight: 500;
+    background-color: blueviolet;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  }
+  

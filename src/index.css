@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+@font-face {
+    font-family: 'HeroFont';
+    src: url('/assets/HeroFont.woff') format('woff'); 
+  }
+body{
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: url('/assets/home-background.svg')!important;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1a9;
+  backdrop-filter: blur(10px);
+}
+::-webkit-scrollbar-thumb {
+  background: blueviolet;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(137, 43, 226, 0.715);
+}

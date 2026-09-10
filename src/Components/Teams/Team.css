@@ -1,0 +1,156 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .team-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .team-title {
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards; /* Increased duration to 2.5s */
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-card {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.446);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.6s ease, background 0.6s ease; 
+    width: 240px;
+    height: auto;
+    box-shadow: 0 0 10px grey;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; 
+  }
+  
+  .team-card:hover::before {
+    top: -30%;
+    left: -30%;
+    transition: all 0.5s;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .circle-image {
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid blueviolet;
+    box-shadow: 0 0 16px rgb(65, 65, 65);
+  }
+  
+  .member-name {
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 1.6rem;
+    font-family: 'HeroFont', sans-serif;
+    font-weight: 550;
+  }
+  
+  .member-role {
+    font-weight: 525;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(49, 49, 49);
+  }
+  
+  .team-card button {
+    margin-top: 10px;
+    width: 120px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .team-card button:hover {
+    box-shadow: 0 0 10px rgb(41, 41, 41);
+  }
+  
+  @media (max-width: 768px) {
+    .team-container{
+      margin: 0px;
+    }
+    .team-title{
+      margin: 20px;
+    }
+    .team-title {
+      font-size: 2rem;
+    }
+  
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .member-name {
+      font-size: 1rem;
+    }
+  
+    .member-role {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .team-card {
+      margin: 0px;
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .member-name {
+      font-size: 0.9rem;
+    }
+  
+    .member-role {
+      font-size: 0.8rem;
+    }
+  }
+  
